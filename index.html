@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="/img/logo.png" alt="read more logo">
+        <div class="cta">
+            <button class="btn add-book" onclick='addBook()'>เพิ่มหนังสือ</button>
+            <button class="btn save-book" onclick="saveData()">save</button>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- section helloUser -->
+        <section class="hello-user">
+            <h1>สวัสดี</h1>
+            <h1 id="userName"></h1>
+        </section>
+        <!-- section allProgress -->
+        <section class="all-progress">
+            <h5 style="width: 30%; margin: 0;">ภาพรวมการอ่าน</h5>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="10"
+                        aria-valuemin="0" aria-valuemax="100">0%</div>
+                </div>
+        </section>
+        <section class="table-responsive">
+            <table class="table" id="table-list">
+                <thead>
+                    <tr class="head-list-book">
+                        <th>รายการหนังสือ</th>
+                        <th>เลขหน้าที่อ่าน</th>
+                        <th>จำนวนหน้าทั้งหมด</th>
+                        <th>ความคืบหน้า</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr class="list-book" id="item-1">
+                        <td class="bookname">หนังสือA</td>
+                        <td class="readpage">20</td>
+                        <td class="allpage">100</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </td>
+                        <td><button class="btn update" onclick="updateProgress('item-1')">Update</button></td>
+                    </tr>
+                    <tr class="list-book" id="item-2">
+                        <td class="bookname">หนังสือB</td>
+                        <td class="readpage">20</td>
+                        <td class="allpage">100</td>
+                        <td>
+                            <div class="progress">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"
+                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                            </div>
+                        </td>
+                        <td><button class="btn review" onclick="updateProgress('item-2')">Review</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+
+        </section>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>

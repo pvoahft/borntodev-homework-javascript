@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: kanit;
+}
+
+h5 {
+    font-family: kanit;
+}
+
+body {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #FF8A00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    margin-left: 82px;
+    height: 40px;
+}
+
+nav .cta {
+    margin-right: 82px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+nav .cta .add-book {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: kanit;
+    border-radius: 8px;
+    background-color: #713F12;
+    color: #F0F9FF;
+}
+
+nav .cta .save-book {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: kanit;
+    border-radius: 8px;
+    background-color: #FEF9C3;
+    color: #0C4A6E;
+}
+
+.container {
+    width: 1276px;
+    margin: auto;
+}
+
+.hello-user {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.all-progress {
+    /* width: 100%; */
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+}
+
+.all-progress .progress {
+    width: 100%;
+}
+
+.all-progress .progress .progress-bar {
+    background-color: #FF8A00;
+}
+
+.table-responsive {
+    margin-top: 40px;
+}
+
+.table-responsive .table .head-list-book {
+    font-family: kanit;
+    color: #713F12;
+}
+
+.table-responsive td {
+    vertical-align: middle;
+    font-family: kanit;
+}
+
+.table-responsive .list-book .update {
+    width: 100%;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: kanit;
+    border-radius: 8px;
+    background-color: #713F12;
+    color: #F0F9FF;
+}
+
+.table-responsive .list-book .incomplete .progress-bar {
+    background-color: #713F12;
+}
+
+.table-responsive .list-book .review {
+    width: 100%;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: kanit;
+    border-radius: 8px;
+    background-color: #009944;
+    color: #F0F9FF;
+}
+
+.table-responsive .list-book .complete .progress-bar {
+    background-color: #009944;
+}
