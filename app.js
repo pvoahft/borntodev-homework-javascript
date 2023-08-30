@@ -96,29 +96,7 @@ function overviewProgress() {
 
 }
 
-function saveData() {
-    alert('save แล้ว');
-    // บอกตำแหน่งของข้อมูล
-    const positionurl = 'https://script.google.com/macros/s/AKfycbweVdS_8iTQ_yhvA71Y8Ai2-hlXNBb1Gwt9be_-vLLxE6jIZCifOI7VDUeL700afVXJ/exec'
-    //ดึงตำแหน่งข้อมูล
-    const allbook = document.querySelectorAll(`.list-book`)
 
-    //เก็บข้อมูล
-    const saveBookName = []
-    const saveCurrentPage = []
-    const saveAllPage = []
-    console.log(allbook)
-    for (i = 0; i < allbook.length; i++) {
-        saveBookName.push([allbook[i].querySelector('.bookname').innerHTML])
-        saveCurrentPage.push([allbook[i].querySelector('.readpage').innerHTML])
-        saveAllPage.push([allbook[i].querySelector('.allpage').innerHTML])
-
-        positionurl = `https://script.google.com/macros/s/AKfycbweVdS_8iTQ_yhvA71Y8Ai2-hlXNBb1Gwt9be_-vLLxE6jIZCifOI7VDUeL700afVXJ/exec?bookname=${saveBookName}&allpage=${saveAllPage}&currentpage=${saveCurrentPage}`
-    }
-    console.log(booksum)
-    console.log(positionurl)
-
-}
 
 function run() {
     addName();
